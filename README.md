@@ -10,50 +10,73 @@ A solução reduz retrabalho, melhora a consistência das informações e aument
 ## ❗ Problema
 O acompanhamento dos planos de ação era realizado manualmente, exigindo:
 
-- Leitura individual de PDFs
-- Identificação manual de líderes e colaboradores
-- Verificação de status (pendente, prorrogado, vencido)
-- Criação manual de mensagens de alerta
+- Leitura individual de PDFs  
+- Identificação manual de líderes e colaboradores  
+- Verificação de status (pendente, prorrogado, vencido)  
+- Criação manual de mensagens de alerta  
 
 Esse processo era:
-- Demorado
-- Repetitivo
-- Sujeito a erros
-- Pouco escalável
+
+- Demorado  
+- Repetitivo  
+- Sujeito a erros  
+- Pouco escalável  
 
 ---
 
 ## ⚙️ Solução
 Foi desenvolvida uma automação em Python que:
 
-- Realiza a leitura automática de arquivos PDF
-- Identifica informações relevantes dos planos de ação
+- Realiza a leitura automática de arquivos PDF  
+- Identifica informações relevantes dos planos de ação  
 - Classifica os status trabalhados no processo:
-  - PENDENTE
-  - PRORROGADO
-  - VENCIDO
-- Gera mensagens de alerta padronizadas
-- Permite execução simplificada via arquivo `.bat`
+  - PENDENTE  
+  - PRORROGADO  
+  - VENCIDO  
+- Gera mensagens de alerta padronizadas  
+- Permite execução simplificada via arquivo `.bat`  
 
 ---
 
 ## 🚀 Resultados
 Com a automação, o processo passou a ser:
 
-- Mais rápido e eficiente
-- Padronizado
-- Menos suscetível a falhas humanas
-- Mais escalável para grandes volumes de dados
+- Mais rápido e eficiente  
+- Padronizado  
+- Menos suscetível a falhas humanas  
+- Mais escalável para grandes volumes de dados  
 
 ---
 
 ## 🖼️ Evidências
 
-### Antes
+### 🔹 Antes
 Processo manual com leitura e envio individual de alertas.
 
-### Depois
+📌 Exemplo de plano com status **PENDENTE**:
+![Antes - Pendente](antes_status_pendente.png)
+
+📌 Exemplo de plano com status **PRORROGADO**:
+![Antes - Prorrogado](antes_status_prorrogado.png)
+
+📌 Exemplo de plano com status **VENCIDO**:
+![Antes - Vencido](antes_status_vencido.png)
+
+---
+
+### 🔹 Depois
 Execução automatizada com geração rápida de alertas padronizados.
+
+📌 Fluxo de execução da automação:
+![Fluxo do Processo](fluxo.png)
+
+📌 Arquivos gerados automaticamente (DOCX):
+![Arquivos Gerados](depois_docx_gerados.png)
+
+📌 Modelo de comunicação gerado:
+![Comunicação Gerada](depois_comunicacao_gerada.png)
+
+---
 
 > ⚠️ Observação: Os dados apresentados nos exemplos são fictícios ou anonimizados para preservar a confidencialidade das informações.
 
@@ -61,11 +84,17 @@ Execução automatizada com geração rápida de alertas padronizados.
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Python
-- Manipulação de arquivos PDF
-- Automação de processos
-- Script `.bat` para execução facilitada
+- Python  
+- Manipulação de arquivos PDF  
+- Automação de processos  
+- Script `.bat` para execução facilitada  
 
 ---
 
 ## 📁 Estrutura do Projeto
+
+- `entrada/` → Arquivos PDF de planos de ação  
+- `saida/` → Arquivos gerados (TXT, DOCX, relatórios)  
+- `prints/` → Evidências do funcionamento  
+- `main.py` → Script principal  
+- `executar.bat` → Execução simplificada  
