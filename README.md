@@ -76,6 +76,8 @@ Execução automatizada com geração rápida de alertas padronizados.
 📌 Modelo de comunicação gerado:
 ![Comunicação Gerada](depois_comunicacao_gerada.png)
 
+> 🔄 Evolução prevista: o projeto poderá incorporar futuramente o recorte automático do plano de ação para anexar às comunicações geradas.
+
 ---
 
 > ⚠️ Observação: Os dados apresentados nos exemplos são fictícios ou anonimizados para preservar a confidencialidade das informações.
